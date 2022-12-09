@@ -68,3 +68,11 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## ##########################################
 ## composer create-project laravel/laravel laravel-tugas2
 ## php artisan serve
+## php artisan make:migration create_products_table
+## php artisan migrate
+## php artisan make:model product
+## php artisan make:controller ProductController
+## set .env
+## php artisan storage:link
+## make view
+## set routes in web.php

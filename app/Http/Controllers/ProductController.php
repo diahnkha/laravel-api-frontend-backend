@@ -9,7 +9,7 @@ class ProductController extends Controller
 {
     function index() {
         $products = product::query()
-            ->limit(5)
+            // ->limit(5)
             ->offset(0) //index, ambil dari index ke berapa
             ->get();
         return view("product.list", ["products" => $products]);

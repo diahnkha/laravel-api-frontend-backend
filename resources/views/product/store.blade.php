@@ -20,7 +20,7 @@
         <label>Foto :</label>
         <input type="file" name="gambar" accept="image/*"><br>
 
-        <label for="deskripsi">Deskripsi :</label>
+        <label for="deskripsi">Deskripsi : (150 char maks appear)</label>
         <input type="deskripsi" name="deskripsi" id="deskripsi"><br>
 
         <label for="harga">Harga :</label>

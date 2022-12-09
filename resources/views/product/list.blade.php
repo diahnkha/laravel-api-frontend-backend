@@ -22,16 +22,16 @@
                     <label class="font-red">NAMA</label>
                     <h1>{{ $product->nama }}</h1>
                     <br>
-                    <img src="{{ Storage::url($product->foto) }}" style="width:250px; height:250px;">
+                    <img src="{{ Storage::url($product->foto) }}" style="object-fit:cover; width:250px; height:250px;">
                     <br><br>
                     <label class="font-red">Deskripsi</label>
-                    <h3>{{ $product->deskripsi }}</h3>
+                    <h3 class="card-desc">{{ substr($product->deskripsi, 0, 150) }}</h3>
                     <br>
                     <label class="font-red">Harga</label>
-                    <h2>{{ $product->harga }}</h2>
+                    <h2 class="font-slate">{{ $product->harga }}</h2>
                     <br>
                     <label class="font-red">Stok</label>
-                    <h4>{{ $product->stok }}</h4>
+                    <h4 class="font-black">{{ $product->stok }}</h4>
                     <br>
                     <div class="btn">
                         <a href="{{ route('product.detail',['id'=>$product->id]) }}">

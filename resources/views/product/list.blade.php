@@ -8,7 +8,7 @@
     <title>list</title>
 </head>
 <body>
-
+    <a href="{{ route('logout') }}"><button class="btn-add">Logout</button>
     <div class="btn-wrap">
         <a href="{{ route('product.store') }}"> <button class="btn-add">Tambah product</button> </a>
     </div>

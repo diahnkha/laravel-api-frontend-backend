@@ -90,3 +90,15 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## di database seeder tambahin tapi ga perlu tambahin import
 ## php artisan db:seed
 
+## php artisan make:controller AuthController
+## php artisan make:middleware WithAuth
+## php artisan make:middleware NoAuth
+## edit AuthController, make func login and logout, add import model and hash
+## tambahin route di web.
+## buat view login, tambahin di auth controller buat request method get
+
+## app>http>middleware
+## di file WithAuth, and NoAuth
+## kernel tambahin WithAuth sama NoAuth, plus import keduanya
+## add middleware on web.php
+

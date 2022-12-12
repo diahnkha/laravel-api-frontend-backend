@@ -16,6 +16,12 @@ class NoAuth
      */
     public function handle(Request $request, Closure $next)
     {
+        if (!session()->isStarted()) session()-> start();
+        if (session()->get("logged", false)){
+            return redirect()
+                ->route("homepage");
+
+        }
         return $next($request);
     }
 }

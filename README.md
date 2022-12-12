@@ -102,3 +102,5 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## kernel tambahin WithAuth sama NoAuth, plus import keduanya
 ## add middleware on web.php
 
+## create sama edit harus yang udh login
+

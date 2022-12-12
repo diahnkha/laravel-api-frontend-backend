@@ -22,7 +22,9 @@
             <input type="text" name="nama" id="nama"><br>
 
             <label>Foto :</label>
-            <input type="file" name="gambar" accept="image/*"><br>
+            <div style="width: 500px; text-align:center; margin: 0 auto;">
+                <input type="file" name="gambar" accept="image/*" ><br>
+            </div>
 
             <label for="deskripsi">Deskripsi : (150 char maks appear)</label>
             <input type="text" name="deskripsi" id="deskripsi"><br>

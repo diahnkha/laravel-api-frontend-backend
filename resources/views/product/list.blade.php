@@ -8,7 +8,11 @@
     <title>list</title>
 </head>
 <body>
-    <a href="{{ route('logout') }}"><button class="btn-add">Logout</button>
+    <center> <h1> Daftar Product </h1> </center>
+    <div class="btn-wrap">
+        <a href="{{ route('logout') }}"> <button class="btn-add">Logout</button> </a>
+    </div>
+    <br>
     <div class="btn-wrap">
         <a href="{{ route('product.store') }}"> <button class="btn-add">Tambah product</button> </a>
     </div>
@@ -17,7 +21,7 @@
 
     <div class="wrap">
     @foreach ($products as $product)
-            <div class="font-blue card">
+            <div class="font-blue card" >
                     <br>
                     <label class="font-red">NAMA</label>
                     <h1>{{ $product->nama }}</h1>

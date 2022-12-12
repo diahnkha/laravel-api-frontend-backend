@@ -104,3 +104,11 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## create sama edit harus yang udh login
 
+## 
+1. composer install
+2. composer update
+3. cp .env.example .env (buat munculin file .env nya)
+4. php artisan key:migrate (buat bikin secret code)
+5. isi file .env supaya ngikutin database kamu
+6. baru migrate
+

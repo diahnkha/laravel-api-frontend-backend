@@ -70,6 +70,8 @@
 Body {
     font-family: Calibri, Helvetica, sans-serif;
     /* background-color: pink; */
+    width: 1260px;
+    margin: auto;
     }
     button {
         background-color: #4CAF50;

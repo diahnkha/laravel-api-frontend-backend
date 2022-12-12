@@ -76,3 +76,17 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## php artisan storage:link
 ## make view
 ## set routes in web.php
+
+## ##############################################
+## php artisan make:migration create_pengguna_table
+## php artisan make:model pengguna
+## edit migrations
+## php artisan migrate
+## edit model pengguna, tambahin import hash juga
+## db seeder, database>seeders>PenggunaSeeder,DatabaseSeeder
+## php artisan make:seed PenggunaSeeder
+## func: seeder nambah data ke db ga manual ga lewat cli
+## di pengguna seeder tambahin import
+## di database seeder tambahin tapi ga perlu tambahin import
+## php artisan db:seed
+

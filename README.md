@@ -66,43 +66,43 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ## ##########################################
-<!-- ## composer create-project laravel/laravel laravel-tugas2
-## php artisan serve
-## php artisan make:migration create_products_table
-## php artisan migrate
-## php artisan make:model product
-## php artisan make:controller ProductController
-## set .env
-## php artisan storage:link
-## make view
-## set routes in web.php
+- composer create-project laravel/laravel laravel-tugas2
+- php artisan serve
+- php artisan make:migration create_products_table
+- php artisan migrate
+- php artisan make:model product
+- php artisan make:controller ProductController
+- set .env
+- php artisan storage:link
+- make view
+- set routes in web.php
 
-## ##############################################
-## php artisan make:migration create_pengguna_table
-## php artisan make:model pengguna
-## edit migrations
-## php artisan migrate
-## edit model pengguna, tambahin import hash juga
-## db seeder, database>seeders>PenggunaSeeder,DatabaseSeeder
-## php artisan make:seed PenggunaSeeder
-## func: seeder nambah data ke db ga manual ga lewat cli
-## di pengguna seeder tambahin import
-## di database seeder tambahin tapi ga perlu tambahin import
-## php artisan db:seed
+## ##########################################
+- php artisan make:migration create_pengguna_table
+- php artisan make:model pengguna
+- edit migrations
+- php artisan migrate
+- edit model pengguna, tambahin import hash juga
+- db seeder, database>seeders>PenggunaSeeder,DatabaseSeeder
+- php artisan make:seed PenggunaSeeder
+- func: seeder nambah data ke db ga manual ga lewat cli
+- di pengguna seeder tambahin import
+- di database seeder tambahin tapi ga perlu tambahin import
+- php artisan db:seed
 
-## php artisan make:controller AuthController
-## php artisan make:middleware WithAuth
-## php artisan make:middleware NoAuth
-## edit AuthController, make func login and logout, add import model and hash
-## tambahin route di web.
-## buat view login, tambahin di auth controller buat request method get
+- php artisan make:controller AuthController
+- php artisan make:middleware WithAuth
+- php artisan make:middleware NoAuth
+- edit AuthController, make func login and logout, add import model and hash
+- tambahin route di web.
+- buat view login, tambahin di auth controller buat request method get
 
-## app>http>middleware
-## di file WithAuth, and NoAuth
-## kernel tambahin WithAuth sama NoAuth, plus import keduanya
-## add middleware on web.php
+- app>http>middleware
+- di file WithAuth, and NoAuth
+- kernel tambahin WithAuth sama NoAuth, plus import keduanya
+- add middleware on web.php
 
-## create sama edit harus yang udh login -->
+- create sama edit harus yang udh login
 
 ## 
 1. composer install
@@ -114,7 +114,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 6. baru migrate
 
 # Laravel-API
-## php artisan make:controller Backend/PenggunaController
+- php artisan make:controller Backend/PenggunaController
     /**
      * CRUD
      * - list => index
@@ -140,9 +140,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
      }
 
-## ke routes>api.php
+- ke routes>api.php
 
-## postman www-form-urlencoded biasanya pakai axios
+- postman www-form-urlencoded biasanya pakai axios
 
 ## api pengguna
 - get http://127.0.0.1:8000/api/pengguna

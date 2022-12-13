@@ -144,3 +144,23 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## postman www-form-urlencoded biasanya pakai axios
 
+## api pengguna
+get http://127.0.0.1:8000/api/pengguna
+get http://127.0.0.1:8000/api/pengguna/:id
+post http://127.0.0.1:8000/api/pengguna
+put http://127.0.0.1:8000/api/pengguna/:id
+del http://127.0.0.1:8000/api/pengguna/:id
+
+## api blog
+get http://127.0.0.1:8000/api/blog
+get http://127.0.0.1:8000/api/blog/:id
+post http://127.0.0.1:8000/api/blog
+put http://127.0.0.1:8000/api/blog/:id
+del http://127.0.0.1:8000/api/blog/:id
+
+## api product
+get http://127.0.0.1:8000/api/product
+get http://127.0.0.1:8000/api/product/:id
+post http://127.0.0.1:8000/api/product
+put http://127.0.0.1:8000/api/product/:id
+del http://127.0.0.1:8000/api/product/:id

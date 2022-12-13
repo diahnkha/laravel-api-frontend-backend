@@ -66,7 +66,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ## ##########################################
-## composer create-project laravel/laravel laravel-tugas2
+<!-- ## composer create-project laravel/laravel laravel-tugas2
 ## php artisan serve
 ## php artisan make:migration create_products_table
 ## php artisan migrate
@@ -102,7 +102,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## kernel tambahin WithAuth sama NoAuth, plus import keduanya
 ## add middleware on web.php
 
-## create sama edit harus yang udh login
+## create sama edit harus yang udh login -->
 
 ## 
 1. composer install

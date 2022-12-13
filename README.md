@@ -114,3 +114,33 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 6. baru migrate
 
 # Laravel-API
+## php artisan make:controller Backend/PenggunaController
+    /**
+     * CRUD
+     * - list => index
+     * - detail => show
+     * - edit => update
+     * - create => store
+     * - delete => destroy
+     */
+
+     function index(){
+
+     }
+
+     function show(){
+
+     }
+
+     function store(){
+
+     }
+
+     function destroy(){
+
+     }
+
+## ke routes>api.php
+
+## postman www-form-urlencoded biasanya pakai axios
+

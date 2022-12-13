@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 50px;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
@@ -86,7 +86,7 @@ Body {
     form {
             border: 3px solid #f1f1f1;
         }
-    input[type=text], input[type=password], input[type=number], input[type=file] {
+    input[type=text], input[type=password], input[type=number], input[type=file], input[type=deskripsi] {
             width: 100%;
             margin: 8px 0;
             padding: 12px 20px;
@@ -116,3 +116,256 @@ Body {
         display: flex;
         width: auto;
     }
+
+.menu{
+    width: 985px;
+    height: 102px;
+    margin: 0 auto;
+    margin-top: 25%;
+}
+
+.menu h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 90px;
+    text-align: center;
+
+    background: #936247;
+    text-align: center;
+
+}
+
+.menu h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-image: url('/bukanslicing/cover-home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#blog-small .wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#blog-small .card-blog{
+    width: 1260px;
+    height: auto;
+    padding: 50px 30px;
+    background: #FFFFFF;
+    /* --c-border */
+
+    border: 1px solid #F5F5F5;
+    border-radius: 5px;
+}
+
+
+#blog-small .card-blog .image{
+    background: #E5F4FF;
+    border-radius: 5px;
+    width: 1260px;
+    height: 640px;
+    margin: 0 auto;
+}
+
+#blog-small .card-blog img{
+    width: 1200px;
+    height: 600px;
+
+    display: block;
+    margin: 0 auto;
+}
+
+#blog-small .detail-list{
+    display: flex;
+    gap: 12px;
+}
+
+#blog-small h2{
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+
+    text-align: center;
+    /* --c-black */
+
+    color: #2C2C2C;
+}
+
+#blog-small h3{
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+
+    /* --c-black-30 */
+
+    color: #4B4B4B;
+}
+
+#blog-small h4{
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+
+    /* --c-black-20 */
+
+    color: #6E6E6E;
+}
+
+
+
+#blog-small .bottom-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+#blog-small .avg-list{
+    display: flex;
+    gap: 5px;
+}
+
+#blog-big .wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#blog-small .avg-list h3{
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+
+    /* --c-primary */
+
+    color: #1473E6;
+
+}
+
+#blog-big .card-blog{
+    width: 1144px;
+    height: auto;
+    padding: 50px 50px;
+    background: #FFFFFF;
+    /* --c-border */
+
+    border: 1px solid #F5F5F5;
+    border-radius: 5px;
+    display: flex;
+    gap: 50px;
+
+}
+
+#blog-big .avg-list a{
+    font-size: 20px;
+}
+
+#blog-big .card-blog .image{
+    background: #E5F4FF;
+    border-radius: 5px;
+    width: 330px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+#blog-big .card-blog img{
+    width: 300px;
+    height: 370px;
+    display: block;
+    margin: 0 auto;
+}
+
+#blog-big .detail-list{
+    display: flex;
+    gap: 12px;
+}
+
+#blog-big h2{
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 700;
+
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    /* --c-black */
+
+    color: #2C2C2C;
+}
+
+#blog-big h3{
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+
+    /* --c-black-30 */
+
+    color: #4B4B4B;
+}
+
+#blog-big h4{
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+
+    /* --c-black-20 */
+
+    color: #6E6E6E;
+}
+
+
+
+#blog-big .bottom-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+#blog-big .avg-list{
+    display: flex;
+    gap: 5px;
+}
+
+#blog-big .avg-list h3{
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+
+    /* --c-primary */
+
+    color: #1473E6;
+
+}

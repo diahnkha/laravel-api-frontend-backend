@@ -11,6 +11,12 @@ class Pengguna extends Model
     use HasFactory;
     public $guarded = ["id"];
     protected $table = "pengguna";
+    // protected $hidden = [
+    //     "id",
+    //     "password",
+    //     "created_at",
+    //     "updated_at"
+    // ];
 
     protected static function boot()
     {

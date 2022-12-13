@@ -113,3 +113,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 5. isi file .env supaya ngikutin database kamu
 6. baru migrate
 
+# Laravel-API

@@ -105,6 +105,17 @@ class PenggunaController extends Controller
      }
 
      function destroy($id){
+
+        $pengguna = Pengguna::query()->where("id", $id)->first();
+
+        if ($pengguna == null) {
+            return response()->json([
+                "status" => false,
+                "message" => "Pengguna tidak ditemukan",
+                "data" => null
+            ]);
+        }
+
         $pengguna=Pengguna::destroy($id);
 
         return response()->json([

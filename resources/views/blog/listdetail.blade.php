@@ -8,8 +8,19 @@
     <title>List Blog</title>
 </head>
 <body>
-    <div class="btn-wrap">
-        <a href="{{ route('blog.store') }}"> <button class="btn-add">Tambah blog</button> </a>
+
+    <div style="display: flex; gap:20px; justify-content:center;">
+        <div class="btn-wrap">
+            <a href="{{ route('logout') }}"> <button class="btn-add">Logout</button> </a>
+        </div>
+
+        <div class="btn-wrap">
+            <a href="{{ route('homepage') }}"> <button class="btn-add">Menu</button> </a>
+        </div>
+
+        <div class="btn-wrap">
+            <a href="{{ route('blog.detaillengkap') }}"> <button class="btn-add">Kembali</button> </a>
+        </div>
     </div>
 
     <div class="wrap">
@@ -43,7 +54,7 @@
 
         </div>
         <a href="{{ route('blog.detail',['id'=>$blog->id]) }}">
-            <button class="btn-add">Detail</button>
+            <button class="btn-add">Edit</button>
         </a>
         <a href="{{ route('blog.destroy',['id'=>$blog->id]) }}">
             <button class="btn-add">Hapus</button>

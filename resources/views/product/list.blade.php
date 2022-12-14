@@ -9,13 +9,20 @@
 </head>
 <body>
     <center> <h1> Daftar Product </h1> </center>
-    <div class="btn-wrap">
-        <a href="{{ route('logout') }}"> <button class="btn-add">Logout</button> </a>
+    <div style="display: flex; gap:20px; justify-content:center;">
+        <div class="btn-wrap">
+            <a href="{{ route('logout') }}"> <button class="btn-add">Logout</button> </a>
+        </div>
+
+        <div class="btn-wrap">
+            <a href="{{ route('homepage') }}"> <button class="btn-add">Menu</button> </a>
+        </div>
+
+        <div class="btn-wrap">
+            <a href="{{ route('product.store') }}"> <button class="btn-add">Tambah product</button> </a>
+        </div>
     </div>
-    <br>
-    <div class="btn-wrap">
-        <a href="{{ route('product.store') }}"> <button class="btn-add">Tambah product</button> </a>
-    </div>
+
 
 
 

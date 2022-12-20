@@ -112,6 +112,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 4. php artisan key:migrate (buat bikin secret code)
 5. isi file .env supaya ngikutin database kamu
 6. baru migrate
+7. php artisan db:seed
 
 # Laravel-API
 - php artisan make:controller Backend/PenggunaController
@@ -164,3 +165,10 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 - post http://127.0.0.1:8000/api/product
 - put http://127.0.0.1:8000/api/product/:id
 - del http://127.0.0.1:8000/api/product/:id
+
+##
+https://releases.jquery.com/jquery/
+ambil yang 3.6.2 minified
+add script in html
+
+add route web

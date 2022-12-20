@@ -16,34 +16,34 @@ use App\Http\Controllers\AuthController;
 |
 */
 
-Route::get('/', function(){
-    return view('landing');
-})->name("homepage")->middleware(["withauth"]);
+// Route::get('/', function(){
+//     return view('landing');
+// })->name("homepage")->middleware(["withauth"]);
 
 // Route::get("/", [ProductController::class, "landing"])->name("homepage")->middleware(["withauth"]);
 // Route::get("/", [ProductController::class, "index"])->name("list");
 
-Route::prefix("product")->middleware(["withauth"])->group(function(){
-    Route::get("/list", [ProductController::class, "index"])->name("product.list");
-    Route::get("/detail/{id}", [ProductController::class, "detail"])->name("product.detail");
-    Route::any('/store', [ProductController::class, "store"])->name("product.store");
+// Route::prefix("product")->middleware(["withauth"])->group(function(){
+//     Route::get("/list", [ProductController::class, "index"])->name("product.list");
+//     Route::get("/detail/{id}", [ProductController::class, "detail"])->name("product.detail");
+//     Route::any('/store', [ProductController::class, "store"])->name("product.store");
 
-    Route::post("/create", [ProductController::class, "create"])->name("product.create");
-    Route::put("/update/{id}", [ProductController::class, "update"])->name("product.update");
-    Route::get("/destroy/{id}", [ProductController::class, "destroy"])->name("product.destroy");
-});
+//     Route::post("/create", [ProductController::class, "create"])->name("product.create");
+//     Route::put("/update/{id}", [ProductController::class, "update"])->name("product.update");
+//     Route::get("/destroy/{id}", [ProductController::class, "destroy"])->name("product.destroy");
+// });
 
-Route::prefix("blog")->middleware(["withauth"])->group(function(){
-    Route::get("/detaillengkap", [blogController::class, "index"])->name("blog.detaillengkap");
-    Route::get("/listlengkap", [blogController::class, "detaillengkap"])->name("blog.detaillengkap");
-    Route::get("/detail/{id}", [blogController::class, "detail"])->name("blog.detail");
-    Route::get("/listdetail/{id}", [blogController::class, "listdetail"])->name("blog.listdetail");
-    Route::any('/store', [blogController::class, "store"])->name("blog.store");
+// Route::prefix("blog")->middleware(["withauth"])->group(function(){
+//     Route::get("/detaillengkap", [blogController::class, "index"])->name("blog.detaillengkap");
+//     Route::get("/listlengkap", [blogController::class, "detaillengkap"])->name("blog.detaillengkap");
+//     Route::get("/detail/{id}", [blogController::class, "detail"])->name("blog.detail");
+//     Route::get("/listdetail/{id}", [blogController::class, "listdetail"])->name("blog.listdetail");
+//     Route::any('/store', [blogController::class, "store"])->name("blog.store");
 
-    Route::post("/create", [blogController::class, "create"])->name("blog.create");
-    Route::put("/update/{id}", [blogController::class, "update"])->name("blog.update");
-    Route::get("/destroy/{id}", [blogController::class, "destroy"])->name("blog.destroy");
-});
+//     Route::post("/create", [blogController::class, "create"])->name("blog.create");
+//     Route::put("/update/{id}", [blogController::class, "update"])->name("blog.update");
+//     Route::get("/destroy/{id}", [blogController::class, "destroy"])->name("blog.destroy");
+// });
 
 
 // Route::get('/', function(){
@@ -52,3 +52,40 @@ Route::prefix("blog")->middleware(["withauth"])->group(function(){
 // })->name("homepage")->middleware(["withauth"]);;
 Route::any("/login", [AuthController::class, "login"])->name("login")->middleware(["noauth"]);
 Route::any("/logout", [AuthController::class, "logout"])->name("logout")->middleware(["withauth"]);
+
+// Route::get("/", function() {
+//     return view('frontend.pengguna.index');
+// })->name('pengguna.index');
+
+// Route::get("/add", function() {
+//     return view('frontend.pengguna.add');
+// })->name('pengguna.add');
+
+// Route::get("/detail/{id}", function($id) {
+//     return view('frontend.pengguna.detail', ["id" => $id]);
+// })->name('pengguna.detail');
+
+// Route::get("/", function() {
+//     return view('frontend.product.index');
+// })->name('product.index');
+
+// Route::get("/add", function() {
+//     return view('frontend.product.add');
+// })->name('product.add');
+
+// Route::get("/detail/{id}", function($id) {
+//     return view('frontend.product.detail', ["id" => $id]);
+// })->name('product.detail');
+
+Route::get("/", function() {
+    return view('frontend.blog.index');
+})->name('blog.index');
+
+Route::get("/add", function() {
+    return view('frontend.blog.add');
+})->name('blog.add');
+
+Route::get("/detail/{id}", function($id) {
+    return view('frontend.blog.detail', ["id" => $id]);
+})->name('blog.detail');
+

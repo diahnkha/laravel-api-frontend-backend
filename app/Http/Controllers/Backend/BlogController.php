@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Backend;
 use App\Models\Blog;
+use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -48,7 +49,7 @@ class BlogController extends Controller
      function store(Request $request)
      {
          $payload = $request->all();
-         $payload['foto'] = $request->file("gambar")->store("gambar", "public");
+         $payload['foto'] = $request->file("foto")->store("gambar", "public");
          if (!isset($payload["judul"])) {
              return response()->json([
                  "status" => false,
@@ -106,24 +107,41 @@ class BlogController extends Controller
          ]);
      }
 
-     function update(Request $request, $id){
-        // $blog = blog::query()
-        //     ->where("id", $id)
-        //     ->first();
-        // $blog->fill($request->all()); //ngisi apa yang udh diubah sama blog karena gatau apa yang diubah blog, entah idnya aja entah email aja
-        // $blog->save();
+    //  function update(Request $request, $id){
+    //     // $blog = blog::query()
+    //     //     ->where("id", $id)
+    //     //     ->first();
+    //     // $blog->fill($request->all()); //ngisi apa yang udh diubah sama blog karena gatau apa yang diubah blog, entah idnya aja entah email aja
+    //     // $blog->save();
 
-        // $payload->update($request->all());
+    //     // $payload->update($request->all());
+    //     $blog = Blog::find($id);
+    //     $blog->update($request->all());
+
+    //     // $blog = blog::where("id",$id)->update($payload);
+    //     return response()->json([
+    //         "status" => true,
+    //         "message" => "",
+    //         "data" => $blog
+    //     ]);
+    //  }
+
+    public function update(Request $request, $id)
+    {
+        $payload = $request->except(['foto']);
         $blog = Blog::find($id);
-        $blog->update($request->all());
+        if (isset($request->foto)) {
+            Storage::disk('public')->delete($blog->foto);
+            $payload["foto"] = $request->foto->store('gambar', 'public');
+        }
 
-        // $blog = blog::where("id",$id)->update($payload);
+        $blog->update($payload);
         return response()->json([
             "status" => true,
             "message" => "",
             "data" => $blog
         ]);
-     }
+    }
 
      function destroy($id){
 

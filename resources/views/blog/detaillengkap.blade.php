@@ -8,7 +8,7 @@
     <title>List Blog</title>
 </head>
 <body>
-<div style="display: flex; gap:20px; justify-content:center;">
+    <div style="display: flex; gap:20px; justify-content:center;">
         <div class="btn-wrap">
             <a href="{{ route('logout') }}"> <button class="btn-add">Logout</button> </a>
         </div>

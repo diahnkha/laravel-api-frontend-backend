@@ -29,7 +29,7 @@ class ProductController extends Controller
     function create(Request $request) {
         $payload = [
             "nama" => $request->input("nama"),
-            "foto" => $request->file("gambar")->store("gambar", "public"),
+            "foto" => $request->file("foto")->store("gambar", "public"),
             "deskripsi" => $request->input("deskripsi"),
             "harga" => $request->input("harga"),
             "stok" => $request->input("stok")
@@ -58,8 +58,8 @@ class ProductController extends Controller
         $data['harga'] = $request->input("harga");
         $data['stok'] = $request->input("stok");
 
-        if ($request->hasFile("gambar")){
-            $data['foto']= $request->file("gambar")->store("gambar", "public");
+        if ($request->hasFile("foto")){
+            $data['foto']= $request->file("foto")->store("gambar", "public");
         }
 
         product::where("id",$id)->update($data);
